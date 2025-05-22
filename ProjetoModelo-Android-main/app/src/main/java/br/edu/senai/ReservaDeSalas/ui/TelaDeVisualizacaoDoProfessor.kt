@@ -11,19 +11,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
-/**
- * Componente de exemplo, troque aqui pelo componente que desejar
- * @author Nome do autor <autor@email.com.br>
- */
+
 @Composable
 fun TeacherViewScreen(modifier: Modifier) {
     Text("Componente de exemplo, troque aqui pelo componente que desejar")
 }
 
-/**
- * Preview do componente de exemplo, troque aqui pelo componente que desejar
- * @author Nome do autor <autor@email.com.br>
- */
+
 @Preview
 @Composable
 fun PreviewTeacherViewScreen() {

@@ -5,7 +5,7 @@
     Data: 20/05/2025
 */
 
-package br.edu.senai.ReservaChan
+package br.edu.senai.ReservaDeSalas
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -17,24 +17,27 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import br.edu.senai.ReservaChan.ui.HomeScreen
 import br.edu.senai.ReservaChan.ui.theme.ReservaChanTheme
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import java.time.LocalDateTime
 
-/**
- * Classe principal do aplicativo.
- * @constructor Cria uma instância da classe MainActivity.
- * @see [ComponentActivity]
- * @see [setContent]
- * @see [enableEdgeToEdge]
- * @author Kauan Lucas Fernandes de Lima  <kauan.lucxs.fl@gmail.com.br>
- */
+import br.edu.senai.ReservaDeSalas.Classes
+import br.edu.senai.ReservaDeSalas.ui
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             ReservaChanTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(
+                    modifier = Modifier.fillMaxSize()
+                            color = MaterialTheme . colorScheme . background
+                ) { innerPadding ->
                     HomeScreen(modifier = Modifier.padding(innerPadding))
+
                 }
+
             }
         }
     }

@@ -10,19 +10,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 
-/**
- * Tela de cadastro de chaves, onde você pode adicionar o componente que desejar.
- * @author Nome do autor <autor@email.com.br>
- */
+
 @Composable
 fun KeyRegistrationScreen() {
     Text("Componente de exemplo, troque aqui pelo componente que desejar")
 }
 
-/**
- * Preview da tela de cadastro de chaves.
- * @author Nome do autor <autor@email.com.br>
- */
+
 @Preview
 @Composable
 fun PreviewKeyRegistrationScreen() {
